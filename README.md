@@ -15,5 +15,5 @@ exampleMap.setVisualTileset(16, tileset) -- cell-size ( in pixels ), tileset-ima
 
 ### methods for usage
 
-* level:setupLevel() - currently does nothing of value, do not use
-* level:modifyTile(x, y, textureIndex, layer) - changes a tile at position (x, y) in tiles, to a tile number (textureIndex), on the specified layer or the default layer
+* ```level:setupLevel()``` - currently does nothing of value, do not use
+* ```level:modifyTile(x, y, textureIndex, layer)``` - changes a tile at position (x, y) in tiles, to a tile number (textureIndex), on the specified layer or the default layer

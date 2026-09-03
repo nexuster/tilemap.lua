@@ -1,1 +1,15 @@
-# tilemap.lua
+# tilemap.lua - LOVE2D Tilemap library
+
+tilemap.lua is a simple implementation of a tilemap / level system that aims to help beginners create tile based games without having to deal with tiled because tiled is scary and mean
+
+## how to setup
+
+this is how you can easily setup your level
+```lua
+local tilemap = require 'yourLibraryFolder/tilemap'
+
+local tileset = love.graphics.newImage('path/to/your/image.png')
+local exampleMap = tilemap.newLevel(16, 16) -- width, height ( in tiles )
+exampleMap.setVisualTileset(16, tileset) -- cell-size ( in pixels ), tileset-image
+
+```

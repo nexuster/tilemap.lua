@@ -17,3 +17,22 @@ exampleMap.setVisualTileset(16, tileset) -- cell-size ( in pixels ), tileset-ima
 
 * ```level:setupLevel()``` - currently does nothing of value, do not use
 * ```level:modifyTile(x, y, textureIndex, layer)``` - changes a tile at position (x, y) in tiles, to a tile number (textureIndex), on the specified layer or the default layer
+* ```level:draw(layer)``` - draws all the tiles on a specific or default layer
+
+### list of layers for reference
+
+```lua
+layers = {
+    --visual-only--
+
+    'visual_top',
+    'visual_bottom',
+
+    --debug/collision--
+
+    'solid',
+    'jump_thru',
+    'top_layer',
+    'bottom_layer'
+},
+```

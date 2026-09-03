@@ -2,6 +2,9 @@
 
 tilemap.lua is a simple implementation of a tilemap / level system that aims to help beginners create tile based games without having to deal with tiled because tiled is scary and mean
 
+simple collision detection may be added soon
+here is an editor that utilizes this library - [Love2d-TilemapEditor](https://github.com/nexuster/LOVE2D-TILEMAP-EDITOR)
+
 ## how to setup
 
 this is how you can easily setup your level

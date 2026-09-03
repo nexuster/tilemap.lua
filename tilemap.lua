@@ -66,10 +66,12 @@ function level:getDimensions()
     return self.metadata.width, self.metadata.height, self.tileSize
 end
 
-function level:draw()
+function level:draw(layer)
+    layer = layer or 'visual_top'
+
     local width, height, size = self:getDimensions()
-    local tiles = self.layers.visual_top.tileData
-    local texture = self.layers.visual_top.texture
+    local tiles = self.layers[layer].tileData
+    local texture = self.layers[layer].texture
 
     if not texture then
         return
